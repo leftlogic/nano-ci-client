@@ -1,0 +1,64 @@
+* {
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+
+h1 {
+  position: absolute;
+  top: 0.444em;
+  right: 1em;
+  opacity: 0.2;
+  margin: 0;
+  z-index: 100;
+}
+
+h2 {
+  position: absolute;
+  bottom: 0.444em;
+  right: 1em;
+  margin: 0;
+  font-size: 1em;
+  z-index: 100;
+}
+
+.messages {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0.444em;
+  overflow-y: scroll;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.messages li {
+  padding: 0 0.444em;
+  font: 14px "Source Code Pro", monospace;
+  white-space: pre;
+}
+
+.error {
+  background: #fffafa;
+  color: #f44;
+}
+
+.info {
+  font-size: 0.8em;
+}
+
+.success {
+  background: #f5fff5;
+  color: #494;
+}
