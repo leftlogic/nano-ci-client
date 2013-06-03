@@ -27,9 +27,8 @@
 
     var newMessage = function (message) {
       var li = document.createElement('li');
-      if (!message.data.match(/[a-z]/)) message.data = ' ';
       li.textContent = message.data;
-      li.classList.add(message.type || '&nbsp;');
+      if (message.type) li.classList.add(message.type);
       return li;
     };
 
