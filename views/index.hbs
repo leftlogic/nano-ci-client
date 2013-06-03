@@ -42,7 +42,7 @@
     var socket;
 
     var tryToConnect = function () {
-      socket = new WebSocket("ws://localhost:5255/");
+      socket = new WebSocket("ws://" + window.location.hostname + ":5255/");
 
       socket.onopen = function() {
         $messages.appendChild(newMessage({
